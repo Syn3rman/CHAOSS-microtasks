@@ -23,3 +23,6 @@ Run/debug config:
 ![](./assets/config.png)
 
 You need to install the requirements in a virtual env that pycharm creates by default, but gives you the option to configure it if it hasn't done it.
+
+The project stucture looks like:
+![](./assets/project_structure.png)
