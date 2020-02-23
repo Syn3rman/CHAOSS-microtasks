@@ -1,5 +1,4 @@
 ## Set up Perceval to be executed from PyCharm.
-------------------------------------------------
 
 After setting up the repo either by cloning it to your machine or by using the import from git option in pycharm, you can install the requirements and run the parceval script by setting the run configurations to:
 

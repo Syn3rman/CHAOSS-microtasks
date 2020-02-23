@@ -1,5 +1,4 @@
 ## Based on the JSON documents produced by Perceval and its source code, try to answer the following questions:
-----------------------------------------------
 
 > What is the meaning of the JSON attribute timestamp?
 
