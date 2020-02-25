@@ -25,3 +25,9 @@ Work done can be found [here](./microtask1/README.md)
 > Task: Set up a dev environment to work on GrimoireLab.
 
 Work done can be found [here](microtask4/README.md)
+
+## Microtask #5:
+
+> Task: Execute micro-mordred to collect, enrich and visualize data from any GitHub repository.
+
+Work done can be found [here](microtask5/README.md)

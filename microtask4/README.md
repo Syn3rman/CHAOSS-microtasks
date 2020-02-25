@@ -26,3 +26,51 @@ You need to install the requirements in a virtual env that pycharm creates by de
 
 The project stucture looks like:
 ![](./assets/project_structure.png)
+
+Once this is done, you can install the docker-compose given below to install the 3 components required - ElasticSearch, Kibiter and MySQL/MariaDB. 
+
+```
+elasticsearch:
+  restart: on-failure:5
+  image: bitergia/elasticsearch:6.1.0-secured
+  command: elasticsearch -Enetwork.bind_host=0.0.0.0 -Ehttp.max_content_length=2000mb
+  environment:
+    - ES_JAVA_OPTS=-Xms2g -Xmx2g
+  ports:
+    - 9200:9200
+
+kibiter:
+  restart: on-failure:5
+  image: bitergia/kibiter:secured-v6.1.4-5
+  environment:
+    - PROJECT_NAME=Development
+    - NODE_OPTIONS=--max-old-space-size=1000
+    - ELASTICSEARCH_URL=https://elasticsearch:9200
+    - ELASTICSEARCH_USER=kibanaserver
+    - ELASTICSEARCH_PASSWORD=kibanaserver
+  links:
+    - elasticsearch
+  ports:
+    - 5601:5601
+    
+mariadb:
+  restart: on-failure:5
+  image: mariadb:10.0
+  expose:
+    - "3306"
+  ports:
+    - "3306:3306"
+  environment:
+    - MYSQL_ROOT_PASSWORD=
+    - MYSQL_ALLOW_EMPTY_PASSWORD=yes
+    - MYSQL_DATABASE=test_sh
+  command: --wait_timeout=2592000 --interactive_timeout=2592000 --max_connections=300
+  log_driver: "json-file"
+  log_opt:
+      max-size: "100m"
+      max-file: "3"
+```
+
+Run the command `docker-compose up -d` on your machine. If you already have MySQL installed, you can use the command `sudo service mysql stop` to stop it before running the command.4
+
+Thus, we have set up a dev environment to work on GrimoireLab.
