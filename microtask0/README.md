@@ -1,5 +1,4 @@
 ## Download PyCharm and get familiar with it.
----------------------------------------------
 
 On ubuntu 18.04, you can use snap to download pycharm using the command:
 

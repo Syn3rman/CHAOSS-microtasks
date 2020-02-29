@@ -31,3 +31,15 @@ Work done can be found [here](microtask4/README.md)
 > Task: Execute micro-mordred to collect, enrich and visualize data from any GitHub repository.
 
 Work done can be found [here](microtask5/README.md)
+
+## Microtask #9:
+
+> Task: Read through the documentation and try to answer the following questions
+
+Work done can be found [here](microtask9/README.md)
+
+## Microtask #10:
+
+> Task: Submit at least a PR to one of the GrimoireLab repositories to fix an issue, improve the documentation, etc.
+
+Work done can be found [here](microtask10/README.md)    
