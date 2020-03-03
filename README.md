@@ -20,6 +20,20 @@ Work done can be found [here](./microtask0/README.md)
 
 Work done can be found [here](./microtask1/README.md)
 
+
+## Microtask #2:
+
+> Task: Create a Python script to execute Perceval via its Python interface using the Git and GitLab backends. 
+
+Work done can be found [here](./microtask2/README.md)
+
+
+## Microtask #3:
+
+> Task: Based on microtask #2, try to answer the following questions
+
+Work done can be found [here](./microtask3/README.md)
+
 ## Microtask #4:
 
 > Task: Set up a dev environment to work on GrimoireLab.
