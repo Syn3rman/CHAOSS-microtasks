@@ -46,6 +46,12 @@ Work done can be found [here](microtask4/README.md)
 
 Work done can be found [here](microtask5/README.md)
 
+## Microtask #5:
+
+> Task: Execute micro-mordred to collect, enrich and visualize data from any GitHub repository.
+
+Work done can be found [here](microtask6/README.md)
+
 ## Microtask #9:
 
 > Task: Read through the documentation and try to answer the following questions
